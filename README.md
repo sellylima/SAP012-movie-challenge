@@ -249,7 +249,7 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 
 Este projeto deve ser resolvido individualmente.
 
-O prazo estimado para concluir o projeto é de 2 a 3 Sprints.
+O prazo estimado para concluir o projeto é de 4 Sprints.
 
 Os testes unitários devem cobrir no mínimo 90% de _statements_,
 _functions_, _lines_ e _branches_.
