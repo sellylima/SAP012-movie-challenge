@@ -273,6 +273,59 @@ você tem um limite máximo de 1.000 solicitações diárias à API por cada
 [IP](https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP), portanto, aconselhamos
 a fazer um uso responsável desse recurso gratuito.
 
+O _boilerplate_ contém uma estrutura de arquivos como ponto de partida, assim
+como toda a configuração de dependências:
+
+```text
+.
+├── .babelrc
+├── .editorconfig
+├── .eslintrc
+├── .gitignore
+├── package.json
+├── README.md
+└── src
+    ├── components
+    │   ├── App.js
+    │   └── App.spec.js
+    ├── index.html
+    ├── main.js
+    └── style.css
+```
+
+### `src/index.html`
+
+Como no projeto anterior, existe um arquivo `index.html`. Como já sabe, aqui
+entra a página que vai ser exibida ao usuário. Também serve para indicar quais
+scripts serão utilizados e juntar tudo o que foi feito.
+
+### `src/main.js`
+
+Recomendamos usar `src/main.js` como ponto de entrada da sua aplicação. O
+_boilerplate_ inclui este arquivo para _conectar_ ou _montar_ o _componente_
+`App` no DOM. Desta forma poderemos fazer testes unitários de nossos
+componentes sen necessidade de que estejam conectados a um DOM global.
+
+Esta não é a única forma de dividir seu código. Pode usar mais arquivos e
+pastas, contanto que a estrutura esteja clara para suas companheiras.
+
+### `src/components/App.js`
+
+Este arquivo contém um _componente_ de exemplo que mostra como podemos
+representar um _componente_ como uma função que retorna um `HTMLElement`. Na
+hora de construir interfaces, é útil pensar nos termos de _componentes_ ou
+_vistas_ que podemos ir aninhando umas dentro das outras. Te convidamos a
+pensar quais _componentes_ ou _caixinhas_ são necessárias para construir sua aplicação
+e que vá adicionando _componentes_ no directorio `components` para implementar
+cada um deles. Embora, novamente, no final, a forma de organizar seu arquivos depende
+de você e da sua equipe. Há muitas formas de faze-lo, e o _boilerplate_
+é apenas uma sugestão 🙊.
+
+### `src/components/App.spec.js`
+
+Este arquivo mostra como podemos criar arquivos com _especificações_
+(expressadas como testes unitários) de nossos componentes.
+
 ## 6. Critérios mínimos de aceitação do projeto
 
 ### Protótipo de Baixa Fidelidade
