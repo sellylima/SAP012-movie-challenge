@@ -1,63 +1,50 @@
-# Projeto de extensão: Movie Challenge
+# Movie Challenge
 
 ## Índice
 
 - [1. Preâmbulo](#1-preâmbulo)
-- [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Considerações gerais](#3-considerações-gerais)
-- [4. Objetivos de aprendizagem](#4-objetivos-de-aprendizagem)
-- [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-minimos-do-projeto)
-- [6. Considerações técnicas](#6-considerações-tecnicas)
+- [2. Resumo do Projeto](#2-resumo-do-projeto)
+- [3. Objetivos de Aprendizagem](#3-objetivos-de-aprendizagem)
+- [4. Considerações Gerais](#4-considerações-gerais)
+- [5. Considerações Técnicas](#5-considerações-técnicas)
+- [6. Critérios mínimos de aceitação do projeto](#6-critérios-mínimos-de-aceitação-do-projeto)
+- [7. Deploy](#7-deploy)
+- [8. Considerações para solicitar seu feedback do projeto](#8-considerações-para-solicitar-seu-feedback-do-projeto)
+- [9. Dicas, guias e leituras complementares](#9-dicas-guias-e-leituras-complementares)
 
 ---
 
 ## 1. Preâmbulo
 
-A forma que vemos filmes mudou radicalmente durante os últimos anos
-devido, em parte, a aparição dos serviços de  [_streaming_](https://pt.wikipedia.org/wiki/Streaming)
-que nos permite assistir em qualquer lugar e momento. O melhor reflexo
-deste fenômeno é o sucesso da Netflix, HBO e Disney+, etc.
+A forma como assistimos à filmes mudou radicalmente nos últimos anos devido,
+em parte, ao surgimento dos serviços de
+[_streaming_](https://pt.wikipedia.org/wiki/Streaming)
+que nos permitem fazê-lo de onde estivermos e a qualquer momento. O melhor
+reflexo desse fenômeno é o sucesso da Netflix, HBO, Disney+ e outros.
 
-Em tempos em que uma das principais ferramentas para combater [a pandemia
-de Covid-19](https://pt.wikipedia.org/wiki/COVID-19) é [evitar](https://pt.wikipedia.org/wiki/Distanciamento_social)
-compartilhar espaços com muitas pessoas (como no cinema), e assistir _streaming_
-será uma das poucas formas (ou a única) de ver filmes.
+Acreditamos que há uma grande oportunidade de propor produtos/experiências
+inovadoras de todos os tipos usando dados de filmes
+(diretores, atores, sagas, sequências, datas, etc.). Podemos pensar em jogos,
+comunidades, catálogos, recomendações com base em preferências pessoais, etc.
+(apenas para citar algumas ideias óbvias).
 
-Acreditamos que há uma grande oportunidade de propor produtos/experiências inovadoras
-de tudo tipo utilizando dados de filmes (directorxs, atores/atrizes, sagas, sequências,
-datas, etc.). Poderíamos pensar em jogos, comunidades, catálogos, recomendações
-baseadas em gostos pessoais, etc. (apenas para mencionar algumas ideias obvias).
-
-![Pelis](https://live.staticflickr.com/117/257368762_38bf6fcf9f_h.jpg)
+![Filmes](https://live.staticflickr.com/117/257368762_38bf6fcf9f_h.jpg)
 
 ## 2. Resumo do projeto
 
-A ideia deste projeto é que, usando uma API com informações de filmes,
-possa idealizar, planejar, organizar e desenvolver uma aplicação web que aproveite
-estes dados e tenha uma proposta de valor atrativa para os usuários.
+Neste projeto, você criará uma página da web destinada a visualizar, filtrar e
+ordenar o catálogo de filmes da
+[_The Movie Database API V3_](https://developer.themoviedb.org/docs).
+Esta página pode servir como um catálogo de filmes geral, mas também, se você
+quiser, pode considerar a possibilidade de projetá-la para um público específico
+com preferências como "filmes western" ou "filmes dos anos 80", por exemplo.
 
 Ainda que a decisão do que fazer é inteiramente sua, há algumas considerações
 gerais que se apresentam a seguir. Pode atender esses requisitos em
 projetos muitos distintos, depende de sua criatividade e do entendimento
 dos seus potenciais usuários!
 
-## 3. Considerações gerais
-
-- Este projeto deve ser feito em equipes de 2 ou mais pessoas.
-- Devem escolher qual problema ou necessidades estão resolvendo com o
-produto que estão desenhando e desenvolvendo.
-- Devem utilizar os dados da API de [OMDB](http://www.omdbapi.com/) (The Open
-Movie Database) com [Fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-ou qualquer outra API que encontrem.
-- Pensem em _test driven development_ no momento de programar a
-solução. Terão que escrever os testes unitários, aproveitem a oportunidade
-de fazer-lo antes de escrever a funcionalidade.
-- Este projeto é "agnóstico" a tecnologia, ou seja, podem desenvolver
-em Vanilla JavaScript ou em algum _framework_ ou biblioteca de sua escolha.
-- Pense em um escopo que, considerando a sua complexidade e a quantidade de
-pessoas na equipe, permita a conclusão do projeto em 2 semanas.
-
-## 4. Objetivos de aprendizagem
+## 3. Objetivos de aprendizagem
 
 Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
 
@@ -258,33 +245,172 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 
 - [ ] **Planejar e executar testes de usabilidade**
 
-## 5. Critérios de aceitação mínimos do projeto
+## 4. Considerações gerais
 
-- Utilizar a API de OMDB usando _Fetch_ para obter e mostrar uma interface baseada
-nos dados de cada resposta.
-- Independentemente do que decida fazer, deve selecionar dados aleatoriamente e mostrar-los
-em alguma das características de seu projeto. Para isto geralmente
-se usa o método `random` do objeto `Math` em JavaScript.
-- Sua solução deve ser _responsive_. Deve se adaptar as telas desktop,
-tablets e celulares.
-- Deve implantar a sua aplicação usando [GitHub Pages](https://pages.github.com/).
+Este projeto deve ser resolvido individualmente.
 
-## 6. Considerações técnicas
+O prazo estimado para concluir o projeto é de 4 Sprints.
 
-- Para usar a API de OMDB deve criar uma chave (_key_) de acesso e adiciona-la
-em cada requisição que faça ao servidor (revisar seção _Usage_ de sua [documentação](http://www.omdbapi.com/)).
-A chave pode ser gerada neste [link](http://www.omdbapi.com/apikey.aspx) preenchendo
-o formulário com a versão gratuita (_free_) selecionada, precisando verificar seu
-_email_ para ativar e usá-la.
-- Lembre que o GitHub Pages serve suas páginas com um certificado [SSL](https://pt.wikipedia.org/wiki/Transport_Layer_Security),
-portanto as requisições a OMDB devem incluir `https` na URL.
-- Lembre que há um limite de 1.000 requisições diárias à API de OMDB
-para cada [IP](https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP). Acreditamos que é
-suficiente, mas te recomendamos o uso responsável deste recurso gratuito.
+Os testes unitários devem cobrir no mínimo 90% de _statements_,
+_functions_, _lines_ e _branches_.
 
-## Conteúdo de referência
+Além disso, você deve definir a estrutura de pastas e arquivos que
+considerar necessária.
+Portanto, os testes e a configuração necessária para executá-los
+serão de sua responsabilidade, mas você pode se basear nos projetos anteriores.
 
-- [Fetch](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API)
-- [Math.random](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+## 5. Considerações Técnicas
 
-Se divirta e comece esta aventura 🎬!
+A aplicação deve ser uma _Single Page App_.
+
+A aplicação não precisa ser _responsiva_.
+
+Para poder usar a API da
+[_The Movie Database API V3_](https://developer.themoviedb.org/docs),
+você deve criar uma conta e, em seguida, uma chave de acesso (_key_)
+e usá-la em cada solicitação que fizer ao servidor. Lembre-se de que
+você tem um limite máximo de 1.000 solicitações diárias à API por cada
+[IP](https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP), portanto, aconselhamos
+a fazer um uso responsável desse recurso gratuito.
+
+## 6. Critérios mínimos de aceitação do projeto
+
+### Protótipo de Baixa Fidelidade
+
+O [_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
+nos fornece uma primeira iteração do protótipo de baixa fidelidade da
+aplicação nesta [imagem](./docs/movie-list.png) e nesta
+[outra](./docs/movie-detail.png).
+
+### Definição do Produto
+
+O
+[_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
+nos apresenta
+este _backlog_ que é o resultado de seu trabalho com o cliente até
+o momento.
+
+---
+
+#### [História do Usuário 1] Lista de Filmes
+
+Eu, como usuária, quero visualizar um catálogo de filmes em uma tabela
+(linhas e colunas).
+
+##### Critérios de aceitação
+
+- Deve ser utilizado o _endpoint_
+[/discover/movie](https://developer.themoviedb.org/reference/discover-movie).
+- A aplicação deve incluir paginação para explorar o catálogo por páginas.
+- Cada filme deve exibir pelo menos: pôster, título original e ano de lançamento.
+
+##### Definição de Pronto
+
+- Os componentes desenvolvidos devem ter testes unitários.
+
+---
+
+#### [História do Usuário 2] Detalhes de um Filme
+
+Eu, como usuária, quero consultar os detalhes de um filme.
+
+##### Critérios de Aceitação
+
+- Deve ser usado o _endpoint_
+[/movie/{movie_id}](https://developer.themoviedb.org/reference/movie-details).
+- Para o filme, devem ser exibidos pelo menos: pôster, título original, ano
+de lançamento, gêneros, média de votação e total de votos.
+- A interface deve permitir retornar à lista de filmes, mantendo o filtro
+e a ordenação.
+
+##### Definição de Pronto
+
+- Os componentes desenvolvidos devem ter testes unitários.
+
+---
+
+#### [História do Usuário 3 - Hacker Edition] Filtro e Ordenação
+
+Eu, como usuária, quero filtrar e ordenar o catálogo de filmes usando os
+critérios suportados pela _TheMovie Database API V3_.
+
+##### Critérios de Aceitação
+
+- Para filtrar, deve ser usado o _endpoint_
+[/discover/movie](https://developer.themoviedb.org/reference/discover-movie),
+e um ou mais de seus parâmetros, como, por exemplo, _with_genres_.
+- Para ordenar, deve ser usado o _endpoint_
+[/discover/movie](https://developer.themoviedb.org/reference/discover-movie),
+e um ou mais de seus parâmetros, como, por exemplo, _sort_by_.
+- A paginação deve manter o filtro e a ordenação.
+- Cada filme deve exibir pelo menos: pôster, título original e ano de lançamento.
+
+##### Definição de Pronto
+
+- Os componentes desenvolvidos devem ter testes unitários.
+
+---
+
+## 7. Deploy
+
+Você pode escolher o provedor (ou provedores) que preferir, juntamente com
+o mecanismo de deploy e estratégia de hospedagem. Recomendamos explorar
+as seguintes opções:
+
+- [Vercel](https://vercel.com/) é uma plataforma que permite
+fazer deploy da nossa aplicação web estática (HTML, CSS e JavaScript) e também
+permite fazer deploy de aplicativos da web que são executados no servidor (Node.js).
+- [Netlify](https://www.netlify.com/) é semelhante ao Vercel, sendo uma
+plataforma que permite fazer deploy da nossa aplicação web estática
+(HTML, CSS e JavaScript) e também permite fazer deploy de aplicativos
+da web que são executados no servidor (Node.js).
+
+## 8. Considerações para solicitar seu feedback do projeto
+
+Antes de agendar seu feedback do projeto com um coach, certifique-se de que seu projeto:
+
+- [ ] Tenha protótipo de alta fidelidade no Figma
+- [ ] Atende a todos os [critérios mínimos de aceitação](#6-criterios-minimos-de-aceitacao-do-projeto)
+- [ ] Está hospedado no GitHub
+- [ ] Está com o [deploy](#7-Deploy) realizado
+- [ ] Possui um README com a definição do produto
+
+Lembre-se de fazer uma autoavaliação dos objetivos de aprendizagem e habilidades
+pessoais em seu painel de estudante.
+
+Se você não concluiu todos os itens acima, não consideramos que você está pronto
+para sua sessão de feedback do projeto.
+
+## 9. Dicas, guias e leituras complementares
+
+### Protótipo de Alta Fidelidade
+
+Com base no protótipo de baixa fidelidade fornecido, crie um protótipo de alta
+fidelidade no Figma. Defina uma paleta de cores e um design gráfico. Tente concluir
+isso em 1 ou 2 dias.
+
+### Explore e consuma a API do The Movie Database
+
+Explore a [documentação](https://developer.themoviedb.org/docs) da API do
+The Movie Database. Comece lendo a seção
+[Getting Started](https://developer.themoviedb.org/docs/getting-started),
+depois
+[AUTHENTICATION --> Application](https://developer.themoviedb.org/docs/authentication-application)
+e, finalmente, as referências dos endpoints
+[/discover/movie](https://developer.themoviedb.org/reference/discover-movie)
+e
+[/movie/{movie_id}](https://developer.themoviedb.org/reference/movie-details).
+
+Em seguida, crie uma conta e gere uma chave (key) de acesso para consumir a API.
+
+Finalmente, faça solicitações HTTP de teste à API usando ferramentas como
+[Postman](https://www.postman.com/) ou
+[REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
+Identifique os cabeçalhos, corpo, verbos, códigos de resposta
+e codificações das solicitações.
+
+### Planeje a implementação da primeira história de usuário
+
+Pegue a primeira história de usuário e divida-a em tarefas menores. Identifique
+a ordem e a prioridade de cada tarefa. Documente seu planejamento no Trello ou
+Github Project.
