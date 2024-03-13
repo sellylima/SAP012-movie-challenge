@@ -306,8 +306,10 @@ _boilerplate_ inclui este arquivo para _conectar_ ou _montar_ o _componente_
 `App` no DOM. Desta forma poderemos fazer testes unitários de nossos
 componentes sen necessidade de que estejam conectados a um DOM global.
 
+Aqui é onde recomendamos implementar a sua SPA.
+
 Esta não é a única forma de dividir seu código. Pode usar mais arquivos e
-pastas, contanto que a estrutura esteja clara para suas companheiras.
+pastas, contanto que a estrutura esteja clara.
 
 ### `src/components/App.js`
 
@@ -467,3 +469,13 @@ e codificações das solicitações.
 Pegue a primeira história de usuário e divida-a em tarefas menores. Identifique
 a ordem e a prioridade de cada tarefa. Documente seu planejamento no Trello ou
 Github Project.
+
+### Compreensão dos Conceitos de SPA (Single Page Application) e Roteamento
+
+Antes de começar a codificar, certifique-se de entender os conceitos de uma Aplicação de Página Única (SPA) e o roteamento de páginas. Isso permitirá criar uma experiência de usuário fluída e dinâmica. Pesquise as melhores práticas e ferramentas disponíveis para implementar uma SPA no seu projeto.
+
+Recomendamos fazer uma SPA mais simples usando `hashchange`.
+Esse [video](https://youtu.be/hf8x3A1e57Y) pode te ajudar a construir a sua SPA na `main.js`
+
+Caso sobre tempo e você queira se aprofundar nas rotas e na construção de uma SPA mais robusta,
+como `Hacker Edition`, você pode implementar esse [roteador com Javascript puro](https://github.com/Laboratoria/curriculum/blob/main/guides/router-spa/README.pt.md)
