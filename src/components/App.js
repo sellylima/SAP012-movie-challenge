@@ -1,10 +1,47 @@
+import { receiveFilms } from "../API.js";
+
 const App = () => {
-  const el = document.createElement('div');
+  const main = document.createElement("div");
 
-  el.className = 'App';
-  el.textContent = 'Hola mundo!';
+  main.className = "App";
+  main.innerHTML = `<main>
+  <section class="section__content">
+    <section class="banner">
+      <h1 class="titulo">ANNE</h1>
+      <p class="titulo__texto">
+      Garota esperta, ativa, com uma imaginação de botar<br> inveja em qualquer um, além de possuir um imenso <br>desejo de evoluir e aprender.</p>
+    </section>
+    
+    <ul class="list__film"></ul>   
+  </section>
+  
+  </div>
+  `;
 
-  return el;
+  receiveFilms().then(filmList => {
+    console.log(filmList);
+    filmList.results.forEach(film => {
+      const { title, poster_path } = film;
+      const posterPath = `https://image.tmdb.org/t/p/w342${poster_path}`;
+      const id = film.id;
+
+      const listFilm = main.querySelector(".list__film");
+
+      listFilm.innerHTML += `
+    <li class="film">
+  <a href="${id}"></a>
+  <img class="coverFilm" src="${posterPath}">
+  
+    </li>
+    `;
+    });
+  });
+
+  // receiveFilms();
+  return main;
 };
 
 export default App;
+
+
+{/* <h2>${title}</h2> */}
