@@ -1,4 +1,4 @@
-export const recebeLista = () => {
+export const receiveFilms  = () => {
   const options = {
     method: "GET",
     headers: {
@@ -8,16 +8,18 @@ export const recebeLista = () => {
     },
   };
 
-  fetch(
+  
+  const films = fetch(
     "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-BR&page=1&sort_by=popularity.desc",
     options
   )
-    .then((response) => response.json())
-    .then((response) => console.log(response))
-    .catch((err) => console.error(err));
+  .then((response) => response.json())
+    .then((data) => {return data})
+    .catch((error) => {return error}); 
+    return films;
 };
 
-export const DetailsCard = () => {
+export const DetailsFilms = () => {
   const options = {
     method: "GET",    //O método GET é como um tipo de pedido que seu navegador faz à biblioteca
     headers: {

@@ -13,42 +13,66 @@
 }
 
 body {
-  background: var(--main-color);
   background: url(./components/img/Ellipse\ 1.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #27170c;
 }
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  
-}
-.article {
-    margin-top: 5rem;
-    border-radius: 50px 50px 0 0;
-  width: 75%;
-  height: 100%;
-  background-color: #27170C;
 
+/*Remove scrollbar*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.section__content {
+  margin-top: 4em;
+  border-radius: 50px 50px 0 0;
+  width: 85%;
+  height: 100%;
+  background-color: #27170c;
 }
 
 .banner {
-    background: url("./components/img/Anne-with-an-E.jpg");
-    background-size: 100%;
-    height: 68%;
-    border-radius: 50px 50px 0 0;
-    background-repeat: no-repeat;
+  background: url("./components/img/Anne-with-an-E.jpg");
+  background-size: 100%;
+  border-radius: 50px 50px 0 0;
+  background-repeat: no-repeat;
+  border: solid 1px red;
 }
 
-.cards {
+.titulo {
+  padding: 1.2em 0 0.5em 1em;
+  /* padding-top: 10rem; */
+  font-size: 120px;
+}
+
+.titulo__texto {
+  padding: 0 0 6em 4em;
+  font-size: 24px;
+  border: solid 1px red;
+}
+
+.list__film {
+  margin-top: 5rem;
+  padding-left: 3.1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6em;
+  list-style: none;
+}
+.film {
+  width: 300px;
 }
 
 footer p {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 2rem;
-    padding: 2.5rem 0;
+  font-size: 12px;
+  text-align: center;
+  /* margin-top: 20rem; */
+  padding: 3.5em 0;
 }
