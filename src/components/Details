@@ -20,5 +20,5 @@ sectionConteudo.innerHTML = `
 return sectionConteudo; 
 
 // detailsFilms().then
-
-export default pageDetails;
+};
+export default details;
