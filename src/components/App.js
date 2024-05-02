@@ -21,7 +21,7 @@ const App = () => {
   receiveFilms().then(filmList => {
     console.log(filmList);
     filmList.results.forEach(film => {
-      const { title, poster_path } = film;
+      const {poster_path } = film;
       const posterPath = `https://image.tmdb.org/t/p/w342${poster_path}`;
       const id = film.id;
 
@@ -29,7 +29,7 @@ const App = () => {
 
       listFilm.innerHTML += `
     <li class="film">
-  <a href="${id}"></a>
+  <a href="#${id}"></a>
   <img class="coverFilm" src="${posterPath}">
   
     </li>
@@ -43,5 +43,5 @@ const App = () => {
 
 export default App;
 
-
+// title
 {/* <h2>${title}</h2> */}

@@ -1,0 +1,24 @@
+import { detailsFilms } from "../API.js";
+
+const details = () => {
+const sectionConteudo = document.createElement('section');
+sectionConteudo.className = "section__conteudo";
+
+sectionConteudo.innerHTML = `
+    <section class="image">
+    img src
+    </section>
+    <section class="conteudo"></section>
+`;
+// detailsFilms().then(details => {
+
+
+// };)
+
+
+
+return sectionConteudo; 
+
+// detailsFilms().then
+
+export default pageDetails;
