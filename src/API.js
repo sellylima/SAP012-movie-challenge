@@ -19,7 +19,7 @@ export const receiveFilms  = () => {
     return films;
 };
 
-export const detailsFilms = () => {
+export const detailsFilms = (movie_id) => {
   const options = {
     method: "GET",    //O método GET é como um tipo de pedido que seu navegador faz à biblioteca
     headers: {
@@ -29,7 +29,7 @@ export const detailsFilms = () => {
     },
   };
 
-  const details = fetch("https://api.themoviedb.org/3/movie/movie_id?language=pt-BR", options)
+  const details = fetch(`https://api.themoviedb.org/3/movie/${movie_id.slice(1)}?language=pt-BR`, options)
     .then((response) => response.json()) //JSON converte a resposta em um formato que o JavaScript pode entender (Isso trata a resposta da solicitação)
     .then((response) => {response}) // é usado para lidar com o sucesso da solicitação os dados JSON  (POSSO USAR COMO DATA???)
     .catch((error) => {return error});  //é usado para lidar com erros que possam ocorrer durante a solicitação

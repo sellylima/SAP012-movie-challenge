@@ -55,7 +55,6 @@ main {
 .titulo__texto {
   padding: 0 0 6em 4em;
   font-size: 24px;
-  border: solid 1px red;
 }
 
 .list__film {
@@ -77,4 +76,9 @@ footer p {
   text-align: center;
   /* margin-top: 20rem; */
   padding: 3.5em 0;
+}
+
+h2 {
+  color:aqua
+  pmargin 10em;
 }
