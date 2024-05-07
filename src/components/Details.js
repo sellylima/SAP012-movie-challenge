@@ -7,14 +7,15 @@ const Details = (movie_id) => {
   detailsFilms(movie_id).then((details) => {
     sectionConteudo.innerHTML = `
         <section class= "image">
-          <a href="#${movie_id}"></a>
+          <a href="#${
+            details.poster_path
+          }"><img class="coverFilm" src="${`https://image.tmdb.org/t/p/w342${details.poster_path}`}"></a>
         </section>
         <section class="conteudo">
           <h2 class="resumo__titulo">${details.title}</h2>
           <p class="resumo__texto">${details.overview} </p>
-          <p>${details.release_date} </p>
+          <a href='/'><button  id="btn-voltar">&#x1F814  Voltar</button></a>
         </section>
-        <a href='/'><button  id="btn-voltar">&#x1F814  Voltar</button></a>
         `;
   });
   return sectionConteudo;
