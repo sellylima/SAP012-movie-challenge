@@ -23,7 +23,6 @@ const App = () => {
 
   receiveFilms().then((filmList) => {
     filmList.results.forEach((film) => {
-      console.log(film);
       const { poster_path } = film;
       const posterPath = `https://image.tmdb.org/t/p/w342${poster_path}`;
       const id = film.id;
