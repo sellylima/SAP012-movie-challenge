@@ -1,10 +1,14 @@
 import App from "./components/App.js";
 import Details from "./components/Details.js";
 
+
+//  /Troca de páginas/ 
 document.getElementById("root").appendChild(App());
 
-const mainRoot = document.getElementById("root");
+// /onde o conteúdo da página será renderizado/
+const mainRoot = document.getElementById("root");  
 
+// /função recebe parametro  movieId e executa a lógica para trocar a página com base nesse id/
 const trocaPagina = (movieId) => {
   mainRoot.appendChild(Details(movieId));
   window.addEventListener("load", () => {

@@ -32,5 +32,5 @@ export const mockdata2 = {
 };
 
 export const mockdata3 = {
-    "erro": "Erro 404."
+    "status": "Erro 404."
 }

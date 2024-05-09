@@ -1,4 +1,4 @@
-export const receiveFilms  = () => {
+export const receiveFilms = () => {
   const options = {
     method: "GET",
     headers: {
@@ -8,20 +8,23 @@ export const receiveFilms  = () => {
     },
   };
 
-  
   const films = fetch(
     "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-BR&page=1&sort_by=popularity.desc",
     options
   )
-  .then((response) => response.json())
-    .then((response) => {return response})
-    .catch((error) => {return error}); 
-    return films;
+    .then((response) => response.json())
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      return error;
+    });
+  return films;
 };
 
 export const detailsFilms = (movie_id) => {
   const options = {
-    method: "GET",    //O método GET é como um tipo de pedido que seu navegador faz à biblioteca
+    method: "GET", //O método GET é como um tipo de pedido que seu navegador faz à biblioteca
     headers: {
       accept: "application/json",
       Authorization:
@@ -29,11 +32,15 @@ export const detailsFilms = (movie_id) => {
     },
   };
 
-  return fetch(`https://api.themoviedb.org/3/movie/${movie_id.slice(1)}?language=pt-BR`, options)
+  return fetch(
+    `https://api.themoviedb.org/3/movie/${movie_id.slice(1)}?language=pt-BR`,
+    options
+  )
     .then((response) => response.json()) //JSON converte a resposta em um formato que o JavaScript pode entender (Isso trata a resposta da solicitação)
     .then((response) => response) // é usado para lidar com o sucesso da solicitação os dados JSON  (POSSO USAR COMO DATA???)
-    .catch((error) => {return error});  //é usado para lidar com erros que possam ocorrer durante a solicitação
-
+    .catch((error) => {
+      return error;
+    }); //é usado para lidar com erros que possam ocorrer durante a solicitação
 };
 
 // .JSON-  usado em aplicativos da web para enviar e receber dados.
