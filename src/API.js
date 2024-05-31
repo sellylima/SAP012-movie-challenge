@@ -8,7 +8,8 @@ export const receiveFilms = () => {
     },
   };
 
-  const films = fetch(
+
+  const films = fetch( 
     "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-BR&page=1&sort_by=popularity.desc",
     options
   )
