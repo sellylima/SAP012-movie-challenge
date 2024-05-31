@@ -1,11 +1,15 @@
 import { detailsFilms } from "../API.js";
 
+// Usando a função detailsFilms(movie_id) para obter detalhes de um filme com um ID específico e, em seguida, manipula o DOM para exibir esses detalhes na página. 
+
 const Details = (movie_id) => {
   const sectionConteudo = document.createElement("section");
   sectionConteudo.className = "section__conteudo";
 
-  detailsFilms(movie_id).then((details) => {
-    sectionConteudo.innerHTML = `
+  detailsFilms(movie_id).then((details) => { // chamando a função DetaisFilms -- o uso do THEN como promessa para lidar com os detalhes do filme quando disponíveis
+    // manipulação do DOM -- 
+    // atualiza o conteúdo da seção com a classe sectionConteudo para conter as informações do filme, como o pôster, título, resumo e um botão de voltar.
+    sectionConteudo.innerHTML = `  
         <section class= "image">
           <a href="#${
             details.poster_path

@@ -33,13 +33,12 @@ const App = () => {
       const listFilm = main.querySelector(".list__film");
 
       listFilm.innerHTML += `
-    <li class="film">
-    
-  <a href="#${id}">
-  <img class="coverFilm" src="${posterPath}">
-  </a>
-  <h2 class="titulo__film">${title}</h2> 
-  <p class="release__date"><strong>Lançamento : </strong>${year}</p>
+      <li class="film">
+      <a href="#${id}">
+        <img class="coverFilm" src="${posterPath}">
+      </a>
+      <h2 class="titulo__film">${title}</h2>
+      <p class="release__date"><strong>Lançamento : </strong>${year}</p>
     </li>
     `;
     });
