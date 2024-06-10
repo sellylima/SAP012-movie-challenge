@@ -124,3 +124,8 @@ strong {
   color: var(--yellow);
   font-weight: 300;
 }
+
+img{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+};
