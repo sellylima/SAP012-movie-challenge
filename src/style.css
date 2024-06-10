@@ -34,7 +34,7 @@ main {
 /* header */
 .header__logo {
   padding-top: 2.5em;
-  padding-left: 10em;
+  padding-left: 12.5em;
   background-repeat: no-repeat;
 }
 
@@ -42,9 +42,8 @@ main {
   margin-top: 3em;
   padding-bottom: 5em;
   border-radius: 50px 50px 0 0;
-  width: 85%;
+  width: 80%;
   height: 100%;
-  background: linear-gradient(190deg, #613a1f -30%, #170d01 70%);
   background-color: #27170c;
 }
 
@@ -52,8 +51,10 @@ main {
 .banner {
   background: url("./components/img/Anne-with-an-E.jpg");
   background-size: 100%;
-  border-radius: 50px 50px 0 0;
+  height: 30%;
+  border-radius: 40px 40px 0 0;
   background-repeat: no-repeat;
+  box-shadow: 2px 3px 0px 0px rgba(0, 3, 5, 0.3);
 }
 
 /* Conteudo do banner */
@@ -82,16 +83,15 @@ main {
 
 /* lista de filmes */
 .list__film {
-  margin-top: 5rem;
-  padding-left: 3.1em;
+  margin-top: 3rem;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 6em;
   list-style: none;
 }
 
 .film {
-  /* padding-left: 1em; */
+  margin-top: 3em;
   color: var(--texto);
   font-size: 11px;
   transition: transform 0.3s linear;
@@ -102,9 +102,16 @@ main {
   transform: scale(1.2);
 }
 
+.coverFilm{
+  width: 300px;
+  height: 450px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
 .titulo__film {
   width: 342px;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0.5em 0 0.3em 0;
 }
 
@@ -124,8 +131,3 @@ strong {
   color: var(--yellow);
   font-weight: 300;
 }
-
-img{
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 25px;
-};
